@@ -1,0 +1,210 @@
+
+
+.project-list-item-link-cont{
+    margin-top: -22%;
+    font-size: 2em;
+    margin-left: .3em;
+}
+
+.project-list-item-link:any-link{
+    color: #000000;
+}
+
+
+#projects-title{
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 200;
+    margin-top: 5%;
+    
+}
+.projects-container{
+    grid-template-columns:30% 70%;
+    display: grid;
+    margin-top: 20%;
+    /* background-color: #a7a7a7; */
+    margin-top: 0;
+    padding-top: 5%;
+}
+
+#projects-grid-header{
+    color: white;
+    font-size: 2em;
+    text-align:left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50%;
+
+}
+
+.projects-section-header{
+    color: white;
+    font-size: 2em;
+    text-align:left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50%;
+}
+
+#projects-list-header{
+    color: white;
+    font-size: 2em;
+    text-align:left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50%;
+
+}
+
+
+.projects-grid{
+    display: grid;
+    grid-template-rows: [row-line1] 91% [row-line2]  ;
+    grid-template-columns: [col-line2] 33% [col-line3] 4vw [col-line4] 33% [col-line5] 4vw [col-line6] 33% [col-line7] ;
+    margin-left: 0;
+    width: 60%;
+    margin-left: 10%;
+}
+
+#projects-grid-item1 {
+    grid-row-end: row-line2;
+    grid-row-start: row-line1;
+    grid-column-end: col-line3;
+    grid-column-start: col-line2;
+}
+
+#projects-grid-item4 {
+    grid-row-end: row-line4;
+    grid-row-start: row-line3;
+    grid-column-end: col-line3;
+    grid-column-start: col-line2;
+}
+
+#projects-grid-item2 {
+    grid-row-end: row-line2;
+    grid-row-start: row-line1;
+    grid-column-end: col-line5;
+    grid-column-start: col-line4;
+}
+
+#projects-grid-item3 {
+    grid-row-end: row-line2;
+    grid-row-start: row-line1;
+    grid-column-end: col-line7;
+    grid-column-start: col-line6;
+}
+
+.projects-grid-img {
+    width: 100%;
+    height: 100%;
+    border-radius: .2em;
+}
+
+
+.projects-grid-item:hover .projects-grid-overlay {
+    opacity: .95;
+    cursor: pointer;
+}
+
+.projects-grid-overlay {
+    border-radius: .2em;
+    height: 101%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(221, 144, 72);
+    position: relative;
+    top: -101.8%;
+}
+  
+.projects-grid-text {
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#project-list-header{
+    color: white;
+    font-size: 1em;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5px;
+    padding-top: 0;
+}
+
+#project-list-header:hover{
+    background-color: rgb(221, 144, 72);
+}
+
+.project-list-item:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.project-list{
+    width: 71%;
+    margin-left: 10%;
+    background-color: rgb(221, 144, 72);
+    border-radius: .4em;
+}
+
+.project-list-item{
+    padding-top: 1%;
+    background-color: rgb(121, 121, 121, 0);
+    transition: ease-in-out .1s;
+    display: grid;
+    grid-template-columns: 30% 35% 21% 7% 5%;
+    border-bottom: 2px solid black;
+}
+
+#project-header-center-justify{
+    text-align: center;
+}
+
+.project-list-made-for{
+    font-size: 1.3em;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.project-list-tech{
+    font-size: 1.3em;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.project-list-title {
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5px;
+}
+
+.project-list-title-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.project-list-date{
+    text-align: left;
+    color: #333333;
+    font-size: 1.3em;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+#project-list-item-rounded-top{
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+}
+
+#project-list-item-rounded-bot{
+    border-bottom-left-radius: .4em;
+    border-bottom-right-radius: .4em;
+}

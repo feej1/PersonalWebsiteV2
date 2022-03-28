@@ -1,0 +1,25 @@
+#navbar-container{
+    height: 5em;
+    background: rgb(0, 0, 0, .7);
+    position: fixed;
+    /* top: -5em; */
+    width: 100%;
+    display: grid;
+    z-index: 10;
+    transition: top .3s ;
+    grid-template-columns: 70% 10% 10% 10%;
+}
+
+
+.navbar-item{
+    text-align: left;
+    font-size: 2em;
+    margin-left: 2%;
+    font-weight: 200;
+    padding-top: .3em;
+}
+
+.navbar-item-link:any-link{
+    color: white;
+    text-decoration: none;
+}

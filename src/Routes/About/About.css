@@ -1,0 +1,90 @@
+
+
+#about-container{
+    display: grid;
+    background: rgb(221, 144, 72,1);
+    grid-template-columns: 50% 50%;
+    position: relative;
+
+    /* grid-template-rows: 100% 100%; */
+}
+
+.about-bottom{
+    height: 10em;
+    background: linear-gradient(rgb(221, 144, 72,1), rgb(221, 144, 72,0));
+}
+
+.about-top {
+   position: relative;
+   z-index: 6;
+   margin-top: -10.24%;
+   color: black;
+}
+
+#about-title{
+    background-color: rgb(221, 144, 72,1);
+    font-size: 4em;
+    font-weight: 200;
+    margin-top: 0%;
+    padding-bottom: 2%;
+}
+
+hr{
+    width: 75%;
+}
+
+.transition-from-wave{
+    height: 80px;
+    background: linear-gradient(rgb(221, 144, 72,.95),rgb(221, 144, 72,1));
+}
+
+.wave {
+    height: 43.75em;
+    position: relative;
+    z-index: 5;
+    background: url(./wave2.svg);
+    transform: rotate(180deg);
+    background-color: transparent;
+}
+
+#about-summary-container{
+    padding-top: 8%;
+    padding-bottom: 40%;
+}
+
+.about-summary-text {
+    /* font-family: 'Poppins', sans-serif; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#about-summary-paragraph{
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 2%;
+    padding-right: 5%;
+}
+
+#about-summary-title{
+    font-size: 3em;
+    /* font-weight: 300; */
+}
+
+#about-languages-icon-grid{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    font-size: 12em;
+    padding-bottom: 10%;
+}
+
+#about-languages-title{
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 22%;
+}
+
+#about-portrait {
+    width: 80%;
+    box-shadow: 30px 30px;
+    margin-bottom: 5%;
+  }

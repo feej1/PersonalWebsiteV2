@@ -1,0 +1,39 @@
+.title-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#title-name {
+    margin-top: 0%;
+    font-size: 800%;
+    margin-bottom: 0%;
+    padding-top: 10%;
+}
+
+#title-job {
+    font-size: 300%;
+    padding-top: 0%;
+    margin-top: 0%;
+    margin-bottom: -4%;
+}
+
+.title-buttons {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-btn {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgb(221, 144, 72); 
+    color:rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 200%;
+    border: 2px solid #fcfafa;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 75px;
+    margin-left:70px ;
+    margin-right:70px ;
+}
