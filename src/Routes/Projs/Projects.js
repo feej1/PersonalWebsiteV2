@@ -6,7 +6,7 @@ const NameGameLink = `https://github.com/feej1/nameGame`
 const ProblemSolverLink = `https://github.umn.edu/fee00003/Problem-Solver`
 const BlackJackEaLink = `https://github.com/feej1/blackJack-EvolutionaryAlgorithm`
 const WebsiteLink = `https://github.com/feej1/PersonalWebsiteV2`
-const StockTraderLink = `https://github.umn.edu/fee00003/stockTrader`
+const StockTraderLink = `https://github.com/feej1/trading-bot`
 
 
 
