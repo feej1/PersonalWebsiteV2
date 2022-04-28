@@ -16,12 +16,14 @@ function ProjectSectionHeader(props){
 
 function ProjectTile (props){
     return(
-        <a href={props.link}>
+        <>
+        {/* <a href={props.link}> */}
             <img className='projects-grid-img' src={props.src} alt="project icon" />
             <div className="projects-grid-overlay">
                 <div className="projects-grid-text">{props.projectTitle}</div>
             </div>
-        </a>
+        {/* </a> */}
+        </>
     )
 }
 
@@ -99,6 +101,23 @@ function ProjectListRowHeaders(){
     )
 }
 
+
+
+var overlays= document.getElementsByClassName("projects-grid-overlay");
+var i;
+
+for (i = 0; i < overlays.length; i++) {
+  overlays[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("content")[0];
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
 function Projects() {
 
     return (
@@ -116,6 +135,10 @@ function Projects() {
                 <div className='projects-grid-item' id="projects-grid-item3">
                     <ProjectTile projectTitle='BlackJack EA' link={BlackJackEaLink} src='https://i.imgur.com/5CLumma.png'/>
                 </div>
+            </div>
+            <ProjectSectionHeader > </ProjectSectionHeader>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <ProjectSectionHeader >All Projects</ProjectSectionHeader>
             <div className="project-list">
