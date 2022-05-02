@@ -76,6 +76,7 @@ function TradingBotProj(){
 
     var map = new Map()
 
+    map.set("Github: https://github.com/feej1/trading-bot", "paragraph")
     map.set("Description", "header")
     map.set(description, "paragraph")
     map.set("Strategy", "header")

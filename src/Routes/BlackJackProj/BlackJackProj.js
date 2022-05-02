@@ -86,7 +86,8 @@ function BlackJackProj(){
     
 
     var map = new Map()
-    
+
+    map.set("Github: https://github.com/feej1/blackJack-EvolutionaryAlgorithm", "paragraph")
     map.set("Description","header")
     map.set(introParagraph, "paragraph")
     map.set("Logic", "header")

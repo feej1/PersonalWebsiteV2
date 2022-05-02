@@ -33,6 +33,7 @@ function PersonalWebsiteProj(){
 
     var map = new Map()
     
+    map.set("Github: https://github.com/feej1/PersonalWebsiteV2", "paragraph")
     map.set("Description","header")
     map.set(descParagraph, "paragraph")
     map.set("Future Work", "header")
