@@ -1,5 +1,5 @@
 import './Projects.css'
-
+import {Link}  from 'react-router-dom'
 
 
 const NameGameLink = `https://github.com/feej1/nameGame`
@@ -16,14 +16,12 @@ function ProjectSectionHeader(props){
 
 function ProjectTile (props){
     return(
-        <>
-        {/* <a href={props.link}> */}
+        <Link to={props.link}>
             <img className='projects-grid-img' src={props.src} alt="project icon" />
             <div className="projects-grid-overlay">
                 <div className="projects-grid-text">{props.projectTitle}</div>
             </div>
-        {/* </a> */}
-        </>
+        </Link>
     )
 }
 
@@ -103,20 +101,6 @@ function ProjectListRowHeaders(){
 
 
 
-var overlays= document.getElementsByClassName("projects-grid-overlay");
-var i;
-
-for (i = 0; i < overlays.length; i++) {
-  overlays[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = document.getElementsByClassName("content")[0];
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
 
 function Projects() {
 
@@ -127,26 +111,22 @@ function Projects() {
             <ProjectSectionHeader >Notable Projects</ProjectSectionHeader>
             <div className="projects-grid">
                 <div className='projects-grid-item' id="projects-grid-item1">
-                    <ProjectTile projectTitle='Website' link={WebsiteLink} src='https://www.dictionary.com/e/wp-content/uploads/2018/06/greater-than-sign-2.jpg'/>
+                    <ProjectTile projectTitle='Personal Website' link="/PortfolioSite" src='https://www.dictionary.com/e/wp-content/uploads/2018/06/greater-than-sign-2.jpg'/>
                 </div>
                 <div className='projects-grid-item' id="projects-grid-item2">
-                    <ProjectTile projectTitle='Stock Trading Bot' link={StockTraderLink} src='https://i.imgur.com/xHfBb1K.png'/>
+                    <ProjectTile projectTitle='Stock Trading Bot' link="/TradingBot" src='https://i.imgur.com/xHfBb1K.png'/>
                 </div>
                 <div className='projects-grid-item' id="projects-grid-item3">
-                    <ProjectTile projectTitle='BlackJack EA' link={BlackJackEaLink} src='https://i.imgur.com/5CLumma.png'/>
+                    <ProjectTile projectTitle='BlackJack EA' link="/BlackJack" src='https://i.imgur.com/5CLumma.png'/>
                 </div>
-            </div>
-            <ProjectSectionHeader > </ProjectSectionHeader>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <ProjectSectionHeader >All Projects</ProjectSectionHeader>
             <div className="project-list">
                 <ProjectListRowHeaders/>
                 <ProjectListItem link={WebsiteLink} title="Portfolio Website" technologies={["JS", "HTML/CSS", "React","Node"]} reason="Personal" year="2022" />
-                <ProjectListItem link={StockTraderLink} title="Stock Trading Bot" technologies={["Java", "Stock API", "MongoDB"]} reason="Personal" year="2021" />
+                <ProjectListItem link={StockTraderLink} title="Stock Trading Bot" technologies={["Python", "Stock API", "Azure"]} reason="Personal" year="2022" />
                 <ProjectListItem link={NameGameLink} title="Name Game App" technologies={["Java", "Andorid Studio", "MongoDB"]} reason="School" year="2021" />
-                <ProjectListItem link={BlackJackEaLink} title="Black Jack Ea" technologies={["Python"]} reason="Personal" year="2022" />
+                <ProjectListItem link={BlackJackEaLink} title="Black Jack Ea" technologies={["Python"]} reason="Personal" year="2021" />
                 <ProjectListItem link={ProblemSolverLink} title="Path Finding Visualizer" technologies={["Java", "Andorid Studio"]} reason="School" year="2020" />
                 <ProjectListItem link='-' roundBottom={true} title="Dev Ops Boards Site" technologies={["JS", "HTML/CSS", "Azure Dev Ops", "Oauth"]} reason="Thomson Reuters" year="2021" />
             </div>

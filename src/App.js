@@ -1,10 +1,11 @@
-import Title from './Routes/Home/Home';
+import Title from './Components/Home/Home';
 import './App.css';
 import Background from './Components/Background/Background';
-import Projects from './Routes/Projs/Projects';
-import About from './Routes/About/About';
+import Projects from './Components/Projs/Projects';
+import About from './Components/About/About';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
+
 
 function App() {
   return (
