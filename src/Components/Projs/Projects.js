@@ -7,6 +7,7 @@ const ProblemSolverLink = `https://github.com/feej1/8puzzle-path-finder`
 const BlackJackEaLink = `https://github.com/feej1/blackJack-EvolutionaryAlgorithm`
 const WebsiteLink = `https://github.com/feej1/PersonalWebsiteV2`
 const StockTraderLink = `https://github.com/feej1/trading-bot`
+const rubiksCubeSolver = `https://github.com/feej1/rubiks-cube-solver`
 
 
 
@@ -126,6 +127,7 @@ function Projects() {
                 <ProjectListItem link={WebsiteLink} title="Portfolio Website" technologies={["JS", "HTML/CSS", "React","Node"]} reason="Personal" year="2022" />
                 <ProjectListItem link={StockTraderLink} title="Stock Trading Bot" technologies={["Python", "Stock API", "Azure"]} reason="Personal" year="2022" />
                 <ProjectListItem link={NameGameLink} title="Name Game App" technologies={["Java", "Andorid Studio", "MongoDB"]} reason="School" year="2021" />
+                <ProjectListItem link={rubiksCubeSolver} title="Rubiks Cube Solver" technologies={["Java", "JavaFX"]} reason="Personal" year="2022" />
                 <ProjectListItem link={BlackJackEaLink} title="Black Jack Ea" technologies={["Python"]} reason="Personal" year="2021" />
                 <ProjectListItem link={ProblemSolverLink} title="Path Finding Visualizer" technologies={["Java", "Andorid Studio"]} reason="School" year="2020" />
                 <ProjectListItem link='-' roundBottom={true} title="Dev Ops Boards Site" technologies={["JS", "HTML/CSS", "Azure Dev Ops", "Oauth"]} reason="Thomson Reuters" year="2021" />
